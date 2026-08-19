@@ -1,4 +1,4 @@
-# Blind OS Command Injection — Submit Feedback
+# Lab: Blind OS command injection with time delays
 
 Access the **Submit Feedback** page.
 
