@@ -1,34 +1,38 @@
-# Blind OS Command Injection
+# Blind OS Command Injection — Submit Feedback
 
-## 1. Submit Feedback Request
+Access the **Submit Feedback** page.
 
-The application provides a **Submit Feedback** page.
+![Submit Feedback page](https://github.com/user-attachments/assets/2090b68d-0287-4d63-9c44-7084224df38b)
 
-<img width="918" height="776" alt="image" src="https://github.com/user-attachments/assets/2090b68d-0287-4d63-9c44-7084224df38b" />
+Submit a normal feedback form and intercept the request using Burp Suite.
 
-I submitted a normal feedback form and intercepted the request.
+![Intercepted feedback request](https://github.com/user-attachments/assets/721f2141-bfec-4cd4-909b-36cf2150f923)
 
-<img width="805" height="754" alt="image" src="https://github.com/user-attachments/assets/721f2141-bfec-4cd4-909b-36cf2150f923" />
+The request contains the following parameters:
 
-The original request body was:
-
-```http
+```text
 csrf=cyp5c8AjlGhMikHv7NRAAlzNfqlXSNSm&name=1&email=test%40test.com&subject=1&message=1
 ```
 
-## 2. Identifying the Vulnerable Parameter
+Try modifying the parameters individually. Only the `email` parameter shows behavior consistent with OS command execution.
 
-I tested the parameters individually and found that only the `email` parameter showed behavior consistent with OS command execution.
+This suggests that the `email` value is likely passed into an OS command or shell command, while the other parameters are handled separately.
 
-This suggests that the `email` value is likely passed to an **OS command or shell command sink**, while the other parameters are handled differently.
+## Testing the Email Parameter
 
-I modified the request as follows:
+Modify the `email` parameter:
 
-```http
-csrf=cyp5c8AjlGhMikHv7NRAAlzNfqlXSNSm&name=1&email=test||ping -c 10 127.0.0.1;&subject=1&message=1
+```text
+email=test@test.com
+→
+email=test||ping -c 10 127.0.0.1;
 ```
 
-## 3. Why `||` Is Used
+The full request body becomes:
+
+```text
+csrf=cyp5c8AjlGhMikHv7NRAAlzNfqlXSNSm&name=1&email=test||ping -c 10 127.0.0.1;&subject=1&message=1
+```
 
 `||` is the shell **OR operator**.
 
@@ -36,28 +40,14 @@ csrf=cyp5c8AjlGhMikHv7NRAAlzNfqlXSNSm&name=1&email=test||ping -c 10 127.0.0.1;&s
 command1 || command2
 ```
 
-The second command runs only if the first command fails.
+The second command is executed only if the first command fails.
 
-In this case:
+A single `|` would behave differently because it is a **pipe operator**, which passes the output of one command into another.
 
-```bash
-test || ping -c 10 127.0.0.1
-```
+## Confirming the Vulnerability
 
-If the original command using the `email` value fails, the injected `ping` command is executed.
+![Delayed response](https://github.com/user-attachments/assets/58fb305f-013d-44b3-8171-2629e4db0902)
 
-A single `|` is different because it is a **pipe operator**, which passes the output of one command into another.
+The server response is delayed by approximately 10 seconds.
 
-Therefore, `||` is used to control command execution flow, not to satisfy the email format.
-
-## 4. Confirming Blind OS Command Injection
-
-<img width="409" height="386" alt="image" src="https://github.com/user-attachments/assets/58fb305f-013d-44b3-8171-2629e4db0902" />
-
-The server response was delayed by approximately 10 seconds.
-
-The command output was not directly displayed in the response, but the delay confirmed that the injected command was executed.
-
-This confirms a:
-
-> **Time-Based Blind OS Command Injection**
+Because the command output is not directly returned in the response, but execution can be confirmed through the response delay, this confirms a **time-based blind OS command injection vulnerability** in the `email` parameter.
