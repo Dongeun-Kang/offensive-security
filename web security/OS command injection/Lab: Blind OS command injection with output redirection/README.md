@@ -1,4 +1,4 @@
-# OS Command Injection — Contact Form
+# Lab: Blind OS command injection with output redirection
 
 Submit a message through the contact form.
 
