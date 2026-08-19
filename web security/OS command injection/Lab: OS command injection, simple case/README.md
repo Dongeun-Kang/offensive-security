@@ -1,5 +1,5 @@
 <img width="319" height="404" alt="image" src="https://github.com/user-attachments/assets/df70032e-6ee8-47f8-a3cc-1223f9084efb" />
-Access to one of products
+[^1]Access to one of products[^1]
 <img width="812" height="40" alt="image" src="https://github.com/user-attachments/assets/92483c80-014b-44d7-ab05-498a3e42569f" />
 Try to modify the URL parameter.
 /product?productId=1 > /product?productId=1;whoami
