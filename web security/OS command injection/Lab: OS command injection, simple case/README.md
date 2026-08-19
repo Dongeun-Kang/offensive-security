@@ -1,4 +1,4 @@
-# OS Command Injection — Stock Check
+#     Lab: OS command injection, simple case
 
 Access one of the product pages.
 
