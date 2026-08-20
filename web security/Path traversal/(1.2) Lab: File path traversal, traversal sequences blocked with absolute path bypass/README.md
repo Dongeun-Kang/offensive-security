@@ -35,5 +35,6 @@ instead of:
 ```text
 ../../../etc/passwd
 ```
+Successfully retrieved the contents of ```text/etc/passwd```.
 
-**Result:** Successfully retrieved `/etc/passwd` using an **absolute path bypass**.
+This confirms that the application blocks traversal sequences but still accepts absolute paths, allowing the restriction to be bypassed.
