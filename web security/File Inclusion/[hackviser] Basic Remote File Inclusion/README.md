@@ -1,4 +1,4 @@
-# Remote File Inclusion (RFI) — Basic Lab
+# Basic Remote File Inclusion
 
 This is a basic-level lab for practicing **Remote File Inclusion (RFI)** exploitation.
 
@@ -79,7 +79,5 @@ hostname
 ```
 
 the hostname of the target server should be displayed directly on the page.
-
-## Result
 
 The successful response confirms that the `page` parameter is vulnerable to **Remote File Inclusion**, allowing remotely hosted PHP code to be included and executed by the target application.
