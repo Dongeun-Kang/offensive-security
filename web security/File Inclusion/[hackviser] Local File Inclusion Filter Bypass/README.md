@@ -1,4 +1,4 @@
-# Local File Inclusion (LFI) — Filter Bypass
+# Local File Inclusion Filter Bypass
 
 This is a lab for practicing **Local File Inclusion (LFI)** exploitation where the application applies a filter to directory traversal sequences.
 
