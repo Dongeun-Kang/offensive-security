@@ -1,4 +1,4 @@
-# [hackviser] Basic Local File Inclusion
+# Basic Local File Inclusion
 
 This is a basic-level lab for practicing **Local File Inclusion (LFI)** exploitation.
 
