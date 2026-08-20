@@ -1,4 +1,4 @@
-## Path Traversal — Absolute Path Bypass
+## Lab: File path traversal, traversal sequences blocked with absolute path bypass
 
 Like in the previous lab, intercept the image-loading request using Burp Suite.
 
