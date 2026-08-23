@@ -19,7 +19,7 @@ We need to extract the error message from each response and compare them directl
 
 In Burp Suite Intruder, locate the `Grep - Extract` function and configure it to extract the error message from the response.
 
-<img width="1020" height="901" alt="image" src="https://github.com/user-attachments/assets/c7e7e379-e11b-4db2-ad7d-805579a61c24" />
+<img width="1020" height="901" alt="Screenshot 2026-08-23 112423" src="https://github.com/user-attachments/assets/f78b922a-9650-4b43-9107-53ead59d90cd" />
 
 Start the attack and compare the extracted error messages.
 
