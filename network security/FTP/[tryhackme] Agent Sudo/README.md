@@ -58,6 +58,6 @@ I discovered a way to abuse the user's sudo privileges and escalate my privilege
 
 After successfully gaining root access, I located and retrieved the root flag.
 
-![image](YOUR_LAST_IMAGE_URL)
+<img width="946" height="322" alt="image" src="https://github.com/user-attachments/assets/71ae5d46-302a-4adf-8806-ddb6124abe81" />
 
 This completed the lab with full root access to the target system.
