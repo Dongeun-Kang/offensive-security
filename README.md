@@ -5,6 +5,7 @@ Personal offensive security notes, lab writeups, references, and reusable templa
 ## Structure
 
 - [writeups/](writeups/) - Hands-on labs grouped by domain and topic.
+- [reports/](reports/) - Formal assessment-style reports for completed labs.
 - [checklists/](checklists/) - Repeatable review and enumeration checklists.
 - [references/](references/) - Ports, tools, glossary, and quick reference material.
 - [templates/](templates/) - Reusable formats for future writeups and reports.
@@ -24,3 +25,10 @@ Personal offensive security notes, lab writeups, references, and reusable templa
 2. Save it under the closest matching category in `writeups/`.
 3. Add screenshots or supporting files under `assets/`.
 4. Link the new file from the category `README.md`.
+
+## Add a New Report
+
+1. Copy `templates/report-template.md`.
+2. Save it under the closest matching folder in `reports/`.
+3. Link the report from `reports/README.md`.
+4. Keep report language concise, evidence-based, and remediation focused.
