@@ -6,3 +6,4 @@ Writeups in this category.
 
 - [Basic Pentesting](tryhackme-basic-pentesting-smb.md)
 - [Blue](tryhackme-blue.md)
+- [Dancing](hackthebox-dancing.md)
