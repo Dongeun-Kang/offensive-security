@@ -5,3 +5,6 @@ Store Linux privilege escalation, persistence, and service misconfiguration writ
 ## Writeups
 
 - [Meow](hackthebox-meow.md)
+
+- [Simple CTF](tryhackme-simple-ctf.md)
+- [Wgel CTF](tryhackme-wgel-ctf.md)
