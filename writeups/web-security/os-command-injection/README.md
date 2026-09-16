@@ -21,3 +21,5 @@ If successfully exploited, it can lead to full compromise of the application and
 - [Lab: Blind OS command injection with output redirection](portswigger-blind-os-command-injection-output-redirection.md)
 - [Lab: Blind OS command injection with time delays](portswigger-blind-os-command-injection-time-delays.md)
 - [Lab: OS command injection, simple case](portswigger-os-command-injection-simple-case.md)
+
+- [Epoch](tryhackme-epoch.md)
