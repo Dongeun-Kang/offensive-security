@@ -20,4 +20,5 @@ A file inclusion vulnerability happens when a web app uses user input directly i
 - [Basic Remote File Inclusion](hackviser-basic-remote-file-inclusion.md)
 - [Local File Inclusion Filter Bypass](hackviser-local-file-inclusion-filter-bypass.md)
 
+- [Responder](hackthebox-responder.md)
 - [Recruit](tryhackme-recruit.md)
