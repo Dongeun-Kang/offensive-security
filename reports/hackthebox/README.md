@@ -9,3 +9,4 @@ Reports written in a concise penetration testing format.
 - [Redeemer Penetration Test Report](redeemer-pentest-report.md)
 - [Responder Penetration Test Report](responder-pentest-report.md)
 - [Sequel Penetration Test Report](sequel-pentest-report.md)
+- [Vaccine Penetration Test Report](vaccine-pentest-report.md)
