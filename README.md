@@ -4,15 +4,15 @@ Personal offensive security notes, lab writeups, references, and reusable templa
 
 ## Writeup Directory
 
-**48 hands-on writeups** from Hack The Box, TryHackMe, PortSwigger Web Security Academy, and Hackviser. Select any title below to open the full writeup.
+**49 hands-on writeups** from Hack The Box, TryHackMe, PortSwigger Web Security Academy, and Hackviser. Select any title below to open the full writeup.
 
 | Category | Coverage | Writeups |
 |---|---|---:|
 | [Linux Security](#linux-security) | Linux enumeration and privilege escalation | 3 |
 | [Network Security](#network-security) | FTP, HTTP, MySQL, Redis, SMB, and SSH | 14 |
-| [Web Security](#web-security) | Access control, authentication, XSS, file inclusion/upload, command injection, path traversal, and SQL injection | 27 |
+| [Web Security](#web-security) | Access control, authentication, XSS, file inclusion/upload, JNDI injection, command injection, path traversal, and SQL injection | 28 |
 | [Windows Security](#windows-security) | Windows enumeration, exploitation, and privilege escalation | 4 |
-| **Total** |  | **48** |
+| **Total** |  | **49** |
 
 ### Linux Security
 
@@ -61,6 +61,7 @@ Personal offensive security notes, lab writeups, references, and reusable templa
 | File Inclusion | TryHackMe | [Recruit](writeups/web-security/file-inclusion/tryhackme-recruit.md) |
 | File Upload | PortSwigger | [RCE via Web Shell Upload](writeups/web-security/file-upload/portswigger-rce-web-shell-upload.md) |
 | File Upload | PortSwigger | [Web Shell Upload — Content-Type Bypass](writeups/web-security/file-upload/portswigger-web-shell-upload-content-type-bypass.md) |
+| JNDI Injection | Hack The Box | [Unified](writeups/web-security/jndi-injection/hackthebox-unified.md) |
 | OS Command Injection | PortSwigger | [Blind Injection — Output Redirection](writeups/web-security/os-command-injection/portswigger-blind-os-command-injection-output-redirection.md) |
 | OS Command Injection | PortSwigger | [Blind Injection — Time Delays](writeups/web-security/os-command-injection/portswigger-blind-os-command-injection-time-delays.md) |
 | OS Command Injection | PortSwigger | [Simple Case](writeups/web-security/os-command-injection/portswigger-os-command-injection-simple-case.md) |
