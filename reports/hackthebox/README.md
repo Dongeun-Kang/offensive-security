@@ -3,6 +3,7 @@
 Reports written in a concise penetration testing format.
 
 - [Archetype Penetration Test Report](archetype-pentest-report.md)
+- [Cap Penetration Test Report](cap-pentest-report.md)
 - [Crocodile Penetration Test Report](crocodile-pentest-report.md)
 - [Dancing Penetration Test Report](dancing-pentest-report.md)
 - [Fawn Penetration Test Report](fawn-pentest-report.md)
