@@ -4,15 +4,15 @@ Personal offensive security notes, lab writeups, references, and reusable templa
 
 ## Writeup Directory
 
-**49 hands-on writeups** from Hack The Box, TryHackMe, PortSwigger Web Security Academy, and Hackviser. Select any title below to open the full writeup.
+**50 hands-on writeups** from Hack The Box, TryHackMe, PortSwigger Web Security Academy, and Hackviser. Select any title below to open the full writeup.
 
 | Category | Coverage | Writeups |
 |---|---|---:|
 | [Linux Security](#linux-security) | Linux enumeration and privilege escalation | 3 |
 | [Network Security](#network-security) | FTP, HTTP, MySQL, Redis, SMB, and SSH | 14 |
-| [Web Security](#web-security) | Access control, authentication, XSS, file inclusion/upload, JNDI injection, command injection, path traversal, and SQL injection | 28 |
+| [Web Security](#web-security) | Access control, authentication, XSS, file inclusion/upload, JNDI injection, command injection, path traversal, and SQL injection | 29 |
 | [Windows Security](#windows-security) | Windows enumeration, exploitation, and privilege escalation | 4 |
-| **Total** |  | **49** |
+| **Total** |  | **50** |
 
 ### Linux Security
 
@@ -45,6 +45,7 @@ Personal offensive security notes, lab writeups, references, and reusable templa
 
 | Vulnerability | Platform | Writeup |
 |---|---|---|
+| Access Control | Hack The Box | [Cap](writeups/web-security/access-control/hackthebox-cap.md) |
 | Access Control | Hack The Box | [Oopsie](writeups/web-security/access-control/hackthebox-oopsie.md) |
 | Authentication | PortSwigger | [Username Enumeration — Different Responses](writeups/web-security/authentication/portswigger-username-enumeration-different-responses.md) |
 | Authentication | PortSwigger | [Username Enumeration — Subtly Different Responses](writeups/web-security/authentication/portswigger-username-enumeration-subtly-different-responses.md) |
