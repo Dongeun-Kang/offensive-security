@@ -4,15 +4,15 @@ Personal offensive security notes, lab writeups, references, and reusable templa
 
 ## Writeup Directory
 
-**50 hands-on writeups** from Hack The Box, TryHackMe, PortSwigger Web Security Academy, and Hackviser. Select any title below to open the full writeup.
+**51 hands-on writeups** from Hack The Box, TryHackMe, PortSwigger Web Security Academy, and Hackviser. Select any title below to open the full writeup.
 
 | Category | Coverage | Writeups |
 |---|---|---:|
 | [Linux Security](#linux-security) | Linux enumeration and privilege escalation | 3 |
 | [Network Security](#network-security) | FTP, HTTP, MySQL, Redis, SMB, and SSH | 14 |
-| [Web Security](#web-security) | Access control, authentication, XSS, file inclusion/upload, JNDI injection, command injection, path traversal, and SQL injection | 29 |
+| [Web Security](#web-security) | Access control, authentication, XSS, file inclusion/upload, JNDI injection, command injection, path traversal, remote code execution, and SQL injection | 30 |
 | [Windows Security](#windows-security) | Windows enumeration, exploitation, and privilege escalation | 4 |
-| **Total** |  | **50** |
+| **Total** |  | **51** |
 
 ### Linux Security
 
@@ -73,6 +73,7 @@ Personal offensive security notes, lab writeups, references, and reusable templa
 | Path Traversal | PortSwigger | [Start-of-Path Validation](writeups/web-security/path-traversal/portswigger-path-traversal-start-of-path-validation.md) |
 | Path Traversal | PortSwigger | [Non-Recursive Strip Bypass](writeups/web-security/path-traversal/portswigger-path-traversal-stripped-non-recursively.md) |
 | Path Traversal | PortSwigger | [Superfluous URL Decode](writeups/web-security/path-traversal/portswigger-path-traversal-superfluous-url-decode.md) |
+| Remote Code Execution | Hack The Box | [Orion](writeups/web-security/remote-code-execution/hackthebox-orion.md) |
 | SQL Injection | Hack The Box | [Vaccine](writeups/web-security/sql-injection/hackthebox-vaccine.md) |
 
 ### Windows Security
